@@ -5,26 +5,35 @@ public class Word
 
     public Word(string text)
     {
-
+        _text = text;
+        _isHidden = false;
     }
 
     public void Hide()
     {
-
+        _isHidden = true;
     }
 
     public void Show()
     {
-
+        _isHidden = false;
     }
 
     public bool IsHidden()
     {
-        return true;
+        return _isHidden;
     }
 
     public string GetDisplayText()
     {
-        return "";
+        if (_isHidden == true)
+        {
+            string hideWord = new string('_', _text.Length);
+            return hideWord;
+        }
+        else
+        {
+            return _text;
+        }
     }
 }
