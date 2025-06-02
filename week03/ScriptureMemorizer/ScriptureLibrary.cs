@@ -29,6 +29,7 @@ public class ScriptureLibrary
             Console.WriteLine("Invalid option. Defaulting to Mosiah 2:17.");
             _scriptureText = lines[0];
             _reference = new Reference("Mosiah", 2, 17);
+            Thread.Sleep(3000);
         }
     }
 

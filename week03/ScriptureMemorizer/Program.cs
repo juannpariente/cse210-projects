@@ -8,7 +8,7 @@ class Program
     {
         Console.WriteLine("Choose one scripture: A. Mosiah 2:17 | B. 2 Nefi 2:25-26 | C. Helaman 5:12");
         Console.Write("Letter: ");
-        string letter = Console.ReadLine();
+        string letter = Console.ReadLine()?.ToUpper();
 
         ScriptureLibrary scriptureLibrary = new ScriptureLibrary(letter);
 
