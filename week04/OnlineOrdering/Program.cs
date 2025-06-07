@@ -26,16 +26,16 @@ class Program
         Console.WriteLine("----------Shipping Label---------");
         Console.WriteLine(order1.ShippingLabel());
         Console.WriteLine("---------------------------------");
-        Console.WriteLine($"Total Price: {order1.TotalPrice()}");
+        Console.WriteLine($"Total Price: ${order1.TotalPrice()}");
 
         Console.WriteLine();
-        
+
         Console.WriteLine("----------Packing Label----------");
         Console.WriteLine(order2.PackingLabel());
         Console.WriteLine("---------------------------------");
         Console.WriteLine("----------Shipping Label---------");
         Console.WriteLine(order2.ShippingLabel());
         Console.WriteLine("---------------------------------");
-        Console.WriteLine($"Total Price: {order2.TotalPrice()}");
+        Console.WriteLine($"Total Price: ${order2.TotalPrice()}");
     }
 }
