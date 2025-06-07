@@ -21,7 +21,7 @@ public class Video
     public void DisplayVideo()
     {
         Console.WriteLine();
-        Console.WriteLine($"Title:{_title}");
+        Console.WriteLine($"Title: {_title}");
         Console.WriteLine($"Author: {_author}");
         Console.WriteLine($"Length: {_videoLength} sec");
         Console.WriteLine($"{CommentsNum()} comments:");
