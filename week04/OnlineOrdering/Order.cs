@@ -32,17 +32,17 @@ public class Order
         List<string> lines = new List<string>();
         foreach (Product product in _products)
         {
-            lines.Add($"{product.GetName()} - {product.GetID}");
+            lines.Add($"{product.GetName()} - ID: {product.GetID()}");
         }
         return string.Join("\n", lines);
     }
 
     public string ShippingLabel()
     {
-        return $"{_customer.GetName()}\n{_customer.GetAddress()}";
+        return $"{_customer.GetName()}\n{_customer.GetAddress().AddressLabel()}";
     }
 
-    public void AddProdcut(Product product)
+    public void AddProduct(Product product)
     {
         _products.Add(product);
     }
